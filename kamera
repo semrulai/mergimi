@@ -1,0 +1,15 @@
+#EXTM3U
+
+# --- RTSP Streams ---
+#EXTINF:-1,Reolink Cam (HD - RTSP)
+rtsp://admin:reolink@192.168.0.10:554/h264Preview_01_main
+
+#EXTINF:-1,Reolink Cam (Low - RTSP)
+rtsp://admin:reolink@192.168.0.10:554/h264Preview_01_sub
+
+# --- HTTP Snapshot (kein Video!) ---
+#EXTINF:-1,Reolink Snapshot (HTTP)
+http://192.168.0.10/cgi-bin/api.cgi?cmd=Snap&channel=0&rs=123&user=admin&password=reolink
+
+#EXTINF:-1,Reolink Snapshot (HTTPS)
+https://192.168.0.10/cgi-bin/api.cgi?cmd=Snap&channel=0&rs=123&user=admin&password=reolink
